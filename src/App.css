@@ -26,7 +26,6 @@
 .EstimatedSalary{
   color: grey;
   font-size: 15px;
-  margin: -10px 0px;
 }
 .JobcardContentBody{
   position: relative
@@ -42,22 +41,27 @@
 }
 
 .AboutCompanyInnerDiv{
-  height: 100px;
+  height: 140px;
   width:100%;
   position: absolute;
   bottom: 0;
   left: 0;
   background-color: white;
   box-shadow: 0px -40px 35px rgb(255, 255, 255, 1); /* Box shadow only on the top */
-  padding: 5px 0px 0px 0px;
+  padding: 5px 0px 10px 0px;
   text-align: center;
 }
 
+.AboutCompanyInnerDiv a{
+  text-decoration: none;  
+}
 .SubheadingText{
   color: grey;
   font-weight: 500;
   font-size: 15px;
-  margin-top: -2  px;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 20px;
 }
 
 .AboutCompanyInnerDiv button{
