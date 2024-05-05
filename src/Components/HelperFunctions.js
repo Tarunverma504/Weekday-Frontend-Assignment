@@ -2,16 +2,16 @@ export const filterJobFun= (selectedRole, selectedExperience, selectedMinBasePay
     if(jobs){
         return jobs.filter(job => {
             // Filter by role
-            if (selectedRole !== "" && job.jobRole != selectedRole) {
+            if (selectedRole !== "" && job.jobRole !== selectedRole) {
               return false;
             }
 
             // Filter by location
-            if (selectedLocation !== "" && job.location != selectedLocation) {
+            if (selectedLocation !== "" && job.location !== selectedLocation) {
                 return false;
             }
 
-            if(searchCompanyName.trim().length>0 && job.companyName.toLowerCase() != searchCompanyName.trim().toLowerCase()){
+            if(searchCompanyName.trim().length>0 && job.companyName.toLowerCase() !== searchCompanyName.trim().toLowerCase()){
                 return false;
             }
         

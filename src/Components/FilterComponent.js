@@ -1,8 +1,6 @@
 import * as React from 'react';
 import DropDown from './DropDown';
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import InputLabel from '@mui/material/InputLabel';
 
 export default function FilterComponent(
   { selectedRole, 

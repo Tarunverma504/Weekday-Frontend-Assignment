@@ -58,14 +58,13 @@ export default function JobCard(props){
                             <div className='AboutCompanyInnerDiv'>
                                 <a href={props.job.jdLink}>View Job</a>
                                 {
-                                    (props.job.minExp || props.job.maxExp) && 
+                                    (props.job.minExp || props.job.maxExp) ?
                                         <p className='SubheadingText'> Minimum Experience: 
                                             {props.job.minExp!=null? " "+props.job.minExp+" - "+props.job.maxExp : " "+props.job.maxExp} Years
                                         </p>
+                                        :
+                                        <p className='SubheadingText'> Minimum Experience: 1 Years</p>
                                 }
-                                {/* <p className='SubheadingText'> Minimum Experience: 
-                                    {props.job.minExp!=null? " "+props.job.minExp+" - "+props.job.maxExp : " "+props.job.maxExp} Years
-                                </p> */}
                                 <p className='SubheadingText' style={{marginTop:"-5px"}}>
                                     Location: {props.job.location!=null?props.job.location:"Not Disclosed"}
                                 </p>
