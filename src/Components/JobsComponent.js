@@ -1,7 +1,6 @@
 import * as React from 'react';
 import JobCard from './JobCard';
 export default function JobsComponent(props){
-    console.log(props.jobs);
   return(
     <div className='Flex-Div JobCardParentDiv'>
         {
@@ -12,11 +11,6 @@ export default function JobsComponent(props){
                     )
                 })
         }
-        
-        {/* <JobCard/>
-        <JobCard/>
-        <JobCard/>
-        <JobCard/> */}
     </div>
   )
 }
